@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Mini App</title>
+
+    <style>
+      body{
+        background: white;
+        margin: 15px;
+      }
+
+      div{
+        margin-top: 50px;
+      }
+      .select class{
+         margin-top: 50px;
+      }
+
+      .conversion {
+         margin-top: 25px;
+         margin-right: 0px;
+         margin-bottom: 25px;
+         margin-left: 0px;
+      }
+      .button {
+        text-align: center;
+        color: red;
+        padding: 9px 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2> Pure_Currency</h2>
+    <div class="select-currency">
+
+      <select class="select-text" id="select-text"
+      on-click="populateCurrencies()" >
+<option selected disabled>Choose Currency </option>
+<option value="USD">US Dollars</option>
+
+ <option value="UGX">Ugandan Shillings</option>
+
+        <option value="KES">Kenyan Shillings</option>
+
+      <option value="GHS">Ghanian Cedi</option>
+
+      <option value="ZAR">South African Rand</option>
+  	 </select>
+
+         </div>
+<button id="myBtn" type="button" class="button">convert</button>
+
+      <div class= "conversion mdc-elevation--z3">
+   			<p id="display"></p>
+
+      </div>
+    <div class="messages">
+
+    </div>
+<div>
+  <h1 id="msg"></h1>
+</div>
+  </body>
+</html>
